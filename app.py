@@ -1,5 +1,5 @@
 import redis 
-
+import time
 
 
 def hello_redis():
@@ -12,6 +12,7 @@ def hello_redis():
 
     print(redisClient.hgetall("stu:101"))
 
+    time.sleep(100)
 
 
 hello_redis()
